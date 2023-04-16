@@ -1,23 +1,23 @@
 # gulp-webp-avif-html-nosvg-nogif-lazyload
 
-Plugin for converting <img> images to <picture> with support for modern formats and popular layout methods.
+Plugin for converting «img» images to «picture» with support for modern formats and popular layout methods.
 - Ignore SVG format. 
 - Ignore GIF format.
-- Ignoring the value of the "src" attribute if there is the "srcset" attribute (default usage, can change). 
-- Support "sizes" attribute. 
+- Ignoring the value of the «src» attribute if there is the «srcset» attribute (default usage, can change). 
+- Support «sizes» attribute. 
 - Convert Youtube cover link to webp construct (default usage, can change).
 - Extended settings:
-    1. Support for one <source> with arbitrary format
-    2. Support for two <source> with arbitrary formats
-    3. Replacing url values with an arbitrary string. For example, replacing the path for each image format.
-    4. Setting build rule for srcset attribute in <picture> if <img> has srcset attribute.
-    5. Youtube link conversion to webp format
+    - Support for one «source» with arbitrary format.
+    - Support for two «source» with arbitrary formats.
+    - Replacing url values with an arbitrary string. For example, replacing the path for each image format.
+    - Setting build rule for srcset attribute in «picture» if «img» has srcset attribute.
+    - Youtube link conversion to webp format.
 - Support for ["vanilla lazyload"](https://www.andreaverlicchi.eu/vanilla-lazyload/) plugin: 
-    1. Support <img> "data-src" attribute
-    2. Support <img> "data-srcset" attribute
-    3. Support <img> "data-sizes" attribute
-    4. Insert inline thumbnail if there is no "src" attribute
-    5. When you use "thumb.gif" thumbnail in the "src" attribute, its "gif" format does not change    
+    - Support «img» «data-src» attribute.
+    - Support «img» «data-srcset» attribute.
+    - Support «img» «data-sizes» attribute.
+    - Insert inline thumbnail if there is no «src» attribute.
+    - When you use «thumb.gif» thumbnail in the «src» attribute, its «gif» format does not change.    
 
 
 ## Basic usage examples
@@ -140,23 +140,23 @@ npm i -D gulp-webp-avif-html-nosvg-nogif-lazyload
 ```
 ## Basic usage
 ```js
-import webpHtml from 'gulp-webp-avif-html-nosvg-nogif-lazyload';
+import pictureHtml from 'gulp-webp-avif-html-nosvg-nogif-lazyload';
 
 gulp.task('html', () => {
   return gulp
     .src('src/*.html')
-    .pipe(webphtml())
+    .pipe(pictureHtml())
     .pipe(gulp.dest('dist'));
 });
 ```
 ## Extended usege
 ```js
-import webpHtml from 'gulp-webp-avif-html-nosvg-nogif-lazyload';
+import pictureHtml from 'gulp-webp-avif-html-nosvg-nogif-lazyload';
 
 gulp.task('html', () => {
   return gulp
     .src('src/*.html')
-    .pipe(webphtml({
+    .pipe(pictureHtml({
       primaryFormat: 'avif',
       primaryAfter: 'images/',
       primaryBefore: 'images/avif/',
