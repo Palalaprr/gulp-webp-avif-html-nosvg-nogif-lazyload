@@ -8,7 +8,7 @@ Plugin for converting «img» images to «picture» with support for modern form
 - Support «sizes» attribute. 
 - Convert Youtube cover link to webp construct (default usage, can change).
 - Extended settings:
-    - Support for one «source» with arbitrary format.
+    - Support for one «source» with arbitrary formats.
     - Support for two «source» with arbitrary formats.
     - Replacing url values with an arbitrary string. For example, replacing the path for each image format.
     - Setting build rule for srcset attribute in «picture» if «img» has srcset attribute.
