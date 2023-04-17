@@ -1,6 +1,7 @@
 # gulp-webp-avif-html-nosvg-nogif-lazyload
 
 Plugin for converting «img» images to «picture» with support for modern formats and popular layout methods.
+- Dual and single output format.
 - Ignore SVG format. 
 - Ignore GIF format.
 - Ignoring the value of the «src» attribute if there is the «srcset» attribute (default usage, can change). 
